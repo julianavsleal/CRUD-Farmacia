@@ -10,6 +10,10 @@ export class Categoria{
 id: number
 
 @IsNotEmpty()
+@Column({length: 100, nullable:false})
+nome_categoria: string
+
+@IsNotEmpty()
 @Column({length: 255, nullable: false})
 descricao: string
 
